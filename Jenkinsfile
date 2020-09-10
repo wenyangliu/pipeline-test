@@ -36,8 +36,8 @@ pipeline {
                 subject: "Hi: Job '${env.PROJECT_NAME} [${env.BUILD_NUMBER}]'",
                 body: """<p>SUCCESSFUL: Job '${env.PROJECT_NAME} [${env.BUILD_NUMBER}]':</p>
                 <p>Check console output at "<a href="${env.BUILD_URL}">${env.PROJECT_NAME} [${env.BUILD_NUMBER}]</a>"</p>""",
-                to: "1753439422@qq.com,2079905596@qq.com",
-                from: "18860469266admin@163.com"
+                to: "2079905596@qq.com",
+                from: "18860469266admin@qq.com"
             )
         }
 
