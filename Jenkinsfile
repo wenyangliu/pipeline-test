@@ -2,6 +2,12 @@ pipeline {
     //指定运行此流水线的节点
     agent any
 
+    options {
+        timestamps()
+        timeout(time: 5, unit: 'MINUTES')
+        skipDefaultCheckout()
+    }
+
     //流水线的阶段
     stages {
         //阶段1 获取代码
@@ -20,7 +26,7 @@ pipeline {
             }
         }
     }
-    
+
     post {
         always {
             script{
